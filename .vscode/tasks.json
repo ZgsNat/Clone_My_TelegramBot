@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Telegram Bot",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/python main.py",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Run Telegram Bot with Watchdog",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/Scripts/python watchdog_script.py",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true
+        }
+    ]
+}
